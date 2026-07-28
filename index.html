@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ece Tabag</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fragment+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<link rel="stylesheet" href="assets/style.css">
+
+<script defer src="https://cloud.umami.is/script.js" data-website-id="ce0ca1e3-779d-4aaf-8943-24efdc871963"></script>
+</head>
+<body>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<nav id="nav">
+  <a href="#" class="nav-name"><span id="site-name">Ece Tabag</span><span class="caret"></span></a>
+  <div class="nav-links">
+    <a href="#writing" class="nav-link">writing</a>
+    <a href="#research" class="nav-link">research</a>
+    <a href="#work" class="nav-link">work</a>
+    <a href="#about" class="nav-link">about</a>
+    <a href="https://ecetabag.substack.com" class="nav-link" id="blog-link" target="_blank" rel="noopener">blog</a>
+    <button class="press-btn" id="press-btn">press me</button>
+    <button class="invert-btn" id="invert-btn" title="Flip colors" aria-label="Toggle color mode"><i class="ti ti-circle-half-2"></i></button>
+  </div>
+</nav>
+
+<div class="page">
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow" id="hero-eyebrow">Cognitive Scientist · Builder · Writer</p>
+    <h1 class="hero-h1" id="hero-h1"></h1>
+    <p class="hero-bio" id="hero-bio">UC Berkeley Cognitive Science (3.9 GPA, Dean's List) — minors in Political Economy and Education. Research in a language lab, strategy at EY-Parthenon, AI consulting in London. Now building systems at Dynasty in SF. I also write a lot about how people learn, think, and talk.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" id="email-btn" href="#"><i class="ti ti-mail"></i><span>Say hello</span></a>
+      <a class="btn" href="https://www.linkedin.com/in/ecetabag" target="_blank"><i class="ti ti-brand-linkedin"></i><span>LinkedIn</span></a>
+      <a class="btn" href="#" id="resume-btn"><i class="ti ti-file-cv"></i><span>Resume</span></a>
+    </div>
+  </div>
+  <div class="hero-photo-col">
+    <div class="hero-photo"><img src="assets/images/embedded-1.jpg" alt="Ece Tabag"></div>
+  </div>
+</section>
+
+<div class="marquee-wrap"><div class="marquee-track" id="marquee-track"></div></div>
+
+<div class="section reveal" id="projects">
+  <div class="section-hd"><span class="section-label">Some of my projects</span><div class="section-rule"></div></div>
+</div>
+<div class="projects-grid reveal">
+  <div class="proj-card">
+    <div class="proj-front">
+      <div class="proj-visual tag-eng"><i class="ti ti-code"></i></div>
+      <span class="proj-tag tag-eng"><i class="ti ti-code"></i>Engineering</span>
+      <div class="proj-title">Full-stack recruiting platform</div>
+      <div class="proj-stat">600+<span class="proj-stat-label">applicants evaluated</span></div>
+      <div class="proj-hint"><i class="ti ti-plus"></i>Details</div>
+    </div>
+    <div class="proj-detail">
+      <div class="proj-desc">Parses resumes (PDF/DOCX), extracts GPA, athletics, leadership, and sales signals, scores candidates using a weighted ranking model, and presents results in an interactive web dashboard for recruiter review.</div>
+      <div class="proj-impact"><i class="ti ti-arrow-up-right"></i>Automated evaluation for 200+ applicants, cutting manual screening time</div>
+    </div>
+  </div>
+  <div class="proj-card">
+    <div class="proj-front">
+      <div class="proj-visual tag-fin"><i class="ti ti-receipt"></i></div>
+      <span class="proj-tag tag-fin"><i class="ti ti-receipt"></i>Finance</span>
+      <div class="proj-title">Stripe billing reconciliation &amp; ARR audit</div>
+      <div class="proj-stat">900+<span class="proj-stat-label">transactions reconciled</span></div>
+      <div class="proj-hint"><i class="ti ti-plus"></i>Details</div>
+    </div>
+    <div class="proj-detail">
+      <div class="proj-desc">Audited and cleaned 160+ historical Stripe purchases, matching payments against contractual fee schedules (valuations, rush fees) to verify ARR and one-time charges and correct reporting discrepancies.</div>
+      <div class="proj-impact"><i class="ti ti-arrow-up-right"></i>Improved accuracy of ARR reporting across 900+ transactions</div>
+    </div>
+  </div>
+  <div class="proj-card">
+    <div class="proj-front">
+      <div class="proj-visual tag-ops"><i class="ti ti-building"></i></div>
+      <span class="proj-tag tag-ops"><i class="ti ti-building"></i>Operations</span>
+      <div class="proj-title">SF office search &amp; expansion planning</div>
+      
+      <div class="proj-hint"><i class="ti ti-plus"></i>Details</div>
+    </div>
+    <div class="proj-detail">
+      <div class="proj-desc">Led office search efforts across San Francisco, evaluating spaces against cost efficiency, team capacity, and long-term operational scalability to support company growth.</div>
+      <div class="proj-impact"><i class="ti ti-arrow-up-right"></i>Drove end-to-end expansion planning for a scaling startup</div>
+    </div>
+  </div>
+  <div class="proj-card">
+    <div class="proj-front">
+      <div class="proj-visual tag-ops"><i class="ti ti-gavel"></i></div>
+      <span class="proj-tag tag-ops"><i class="ti ti-gavel"></i>Regulatory</span>
+      <div class="proj-title">Government onboarding &amp; regulatory filings</div>
+      
+      <div class="proj-hint"><i class="ti ti-plus"></i>Details</div>
+    </div>
+    <div class="proj-detail">
+      <div class="proj-desc">Supported legal and operational onboarding through regulatory filings, registrations, and government verification procedures for a trust company operating in a compliance-heavy environment.</div>
+      <div class="proj-impact"><i class="ti ti-arrow-up-right"></i>End-to-end regulatory process management</div>
+    </div>
+  </div>
+  <div class="proj-card">
+    <div class="proj-front">
+      <div class="proj-visual tag-ops"><i class="ti ti-truck-delivery"></i></div>
+      <span class="proj-tag tag-ops"><i class="ti ti-truck-delivery"></i>Automation</span>
+      <div class="proj-title">Vendor &amp; catering automation (DoorDash)</div>
+      
+      <div class="proj-hint"><i class="ti ti-plus"></i>Details</div>
+    </div>
+    <div class="proj-detail">
+      <div class="proj-desc">Designed and implemented automated workflows for company-wide meal delivery coordination and bulk procurement, significantly reducing manual administrative overhead and optimizing team logistics.</div>
+      <div class="proj-impact"><i class="ti ti-arrow-up-right"></i>Eliminated manual coordination for recurring vendor orders</div>
+    </div>
+  </div>
+  <div class="proj-card">
+    <div class="proj-front">
+      <div class="proj-visual tag-ai"><i class="ti ti-robot"></i></div>
+      <span class="proj-tag tag-ai"><i class="ti ti-robot"></i>AI &amp; Automation</span>
+      <div class="proj-title">Slack lunch bot &amp; AI tooling suite</div>
+      <div class="proj-stat">~25%<span class="proj-stat-label">faster task completion</span></div>
+      <div class="proj-hint"><i class="ti ti-plus"></i>Details</div>
+    </div>
+    <div class="proj-detail">
+      <div class="proj-desc">Engineered a lunch automation system using Google Apps Script, Slack webhooks, and Google Sheets. Built an Azure trend-monitoring bot (saving 12+ hrs/week), a 63-tool AI catalog, and AI Slack bots driving ~30% engagement lift.</div>
+      <div class="proj-impact"><i class="ti ti-arrow-up-right"></i>~25% reduction in task completion time across internal workflows</div>
+    </div>
+  </div>
+  <div class="proj-card">
+    <div class="proj-front">
+      <div class="proj-visual tag-eng"><i class="ti ti-users"></i></div>
+      <span class="proj-tag tag-eng"><i class="ti ti-users"></i>EdTech</span>
+      <div class="proj-title">PEAR &mdash; peer tutoring matching platform</div>
+      <div class="proj-stat">85%<span class="proj-stat-label">improved academic outcomes</span></div>
+      <div class="proj-hint"><i class="ti ti-plus"></i>Details</div>
+    </div>
+    <div class="proj-detail">
+      <div class="proj-desc">Founded a P2P tutoring platform serving 300+ students with 52 mentors. Developed a JavaScript-based weighted bipartite matching algorithm cutting manual effort by 70%, coordinating 100+ sessions/month.</div>
+      <div class="proj-impact"><i class="ti ti-arrow-up-right"></i>85% of participants improved academic outcomes</div>
+    </div>
+  </div>
+  <div class="proj-card">
+    <div class="proj-front">
+      <div class="proj-visual tag-ai"><i class="ti ti-book-2"></i></div>
+      <span class="proj-tag tag-ai"><i class="ti ti-book-2"></i>AI</span>
+      <div class="proj-title">AI prompt library &amp; model training</div>
+      <div class="proj-stat">~25%<span class="proj-stat-label">faster task completion</span></div>
+      <div class="proj-hint"><i class="ti ti-plus"></i>Details</div>
+    </div>
+    <div class="proj-detail">
+      <div class="proj-desc">Built an AI Prompt Library to train models for specific internal workflows, and created an Azure Industry Trend Monitoring Bot automating real-time market tracking for the team.</div>
+      <div class="proj-impact"><i class="ti ti-arrow-up-right"></i>~25% reduction in task completion time; 12+ hrs/week saved</div>
+    </div>
+  </div>
+</div>
+
+<section class="section reveal" id="research">
+  <div class="section-hd"><span class="section-label">Research &amp; Publications</span><div class="section-rule"></div></div>
+  <div class="papers-grid">
+    <div class="paper-card" id="pomelo-card" style="cursor:pointer"><span class="paper-venue">IEEE · 2019</span><div class="paper-title">Pomelo: A Collaborative EdTech Interaction Robot</div><div class="paper-desc">An interactive robot teaching children algorithmic thinking via collaborative games — published with IEEE at age 15.</div><div class="paper-desc" style="margin-top:8px;color:var(--ink);font-weight:500">Read more →</div></div>
+    <div class="paper-card" id="blockcoding-card" style="cursor:pointer"><span class="paper-venue">Paper · 2019</span><div class="paper-title">The Benefits of Learning Block-Based Coding Languages</div><div class="paper-desc">How Scratch-style programming and peer learning foster deeper coding comprehension in early learners.</div><div class="paper-desc" style="margin-top:8px;color:var(--ink);font-weight:500">Read more →</div></div>
+  </div>
+  <div class="lab-card"><div class="lab-title">Language &amp; Cognitive Development Lab, UC Berkeley</div><div class="lab-detail">48-week on-site research with Dr. Mahesh Srinivasan on children's novel concept formation and category knowledge. Designed experiments, analyzed complex datasets in R, contributed to publication pipeline.</div></div>
+</section>
+
+<section class="section reveal" id="writing">
+  <div class="section-hd"><span class="section-label">Writing</span><div class="section-rule"></div></div>
+  <div class="filters" id="filters">
+    <button class="filter-btn active" data-cat="all">All</button>
+    <button class="filter-btn" data-cat="sociology">Sociology</button>
+    <button class="filter-btn" data-cat="psycholinguistics">Psycholinguistics</button>
+    <button class="filter-btn" data-cat="epistemology">Epistemology</button>
+    <button class="filter-btn" data-cat="pedagogy">Pedagogy</button>
+    <button class="filter-btn" data-cat="health">Health</button>
+    <button class="filter-btn" data-cat="tech">Tech</button>
+  </div>
+  <div class="writing-grid" id="writing-grid"></div>
+</section>
+
+<section class="section reveal" id="work">
+  <div class="section-hd"><span class="section-label">Work</span><div class="section-rule"></div></div>
+  <div class="timeline" id="timeline"></div>
+</section>
+
+<section class="section reveal" id="about">
+  <div class="section-hd"><span class="section-label">Beyond work</span><div class="section-rule"></div></div>
+  <div class="fun-grid" id="fun-grid"></div>
+  <div style="margin-top:2rem">
+    <div class="section-hd" style="margin-bottom:1rem"><span class="section-label">Speaking</span><div class="section-rule"></div></div>
+    <div class="talks-list" id="talks-list"></div>
+  </div>
+  <div style="margin-top:1.5rem" id="skills-section">
+    <div class="section-hd" style="margin-bottom:1rem"><span class="section-label">Skills &amp; tools</span><div class="section-rule"></div></div>
+    <div class="skills-grid" id="skills-grid"></div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-l">© 2025 Ece Tabag · ecetabag@berkeley.edu <span class="ece-stamp">ece/01</span></span>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/ecetabag" target="_blank">LinkedIn ↗</a>
+    <a href="#" id="footer-email">Email ↗</a>
+  </div>
+</footer>
+</div>
+
+<!-- ARTICLE SLIDE-IN PAGE -->
+<div class="article-page" id="article-page">
+  <div class="article-header">
+    <button class="article-back" id="article-back"><i class="ti ti-arrow-left"></i>Back</button>
+  </div>
+  <div class="article-body-wrap">
+    <div class="article-cat"><div class="article-dot" id="art-dot"></div><span id="art-cat"></span></div>
+    <h1 class="article-title" id="art-title"></h1>
+    <span class="article-date" id="art-date" style="display:none"></span>
+    <img class="article-img" id="art-img" src="" alt="" style="display:none">
+    <div class="article-img-caption" id="art-img-caption" style="display:none"></div>
+    <div class="article-summary" id="art-summary" style="display:none">
+      <div class="article-summary-label">Summary</div>
+      <div class="article-summary-text" id="art-summary-text"></div>
+    </div>
+    <p class="article-lede" id="art-lede"></p>
+    <div class="article-content" id="art-body"></div>
+  </div>
+</div>
+
+<div class="visitor-pill" id="visitor-pill"></div>
+<div id="egg"><button id="egg-btn" aria-label="Fun fact">💡</button><div id="egg-tooltip"></div></div>
+
+<!-- CHATBOT -->
+<div id="chatbot-widget">
+  <button id="chatbot-toggle" aria-label="Ask about Ece"><i class="ti ti-message-circle-2"></i></button>
+  <div id="chatbot-panel">
+    <div class="chatbot-header">
+      <div class="chatbot-title">Ask Ece<span class="caret"></span></div>
+      <div class="chatbot-sub">ece/02 · professional questions only</div>
+      <button id="chatbot-close" aria-label="Close chat"><i class="ti ti-x"></i></button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+    <div class="chatbot-chips" id="chatbot-chips"></div>
+    <form class="chatbot-input-row" id="chatbot-form">
+      <input type="text" id="chatbot-input" placeholder="Ask about my work, background, skills…" autocomplete="off">
+      <button type="submit" aria-label="Send"><i class="ti ti-send-2"></i></button>
+    </form>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+
+
+<div class="paper-modal" id="paper-modal">
+  <div class="paper-modal-nav">
+    <button class="back-btn" id="paper-back"><i class="ti ti-arrow-left"></i> Back</button>
+  </div>
+  <div class="paper-modal-body">
+    <div class="art-meta"><span id="pm-venue"></span></div>
+    <h1 class="art-h1" id="pm-title"></h1>
+    <img class="art-img" id="pm-poster" src="" alt="" style="width:100%;margin-top:1.5rem;border-radius:8px;display:none">
+    <div id="pm-actions" style="margin-top:1.5rem;margin-bottom:1.5rem;display:flex;gap:10px;flex-wrap:wrap"></div>
+    <div class="art-body" id="pm-body"></div>
+  </div>
+</div>
+</body>
+</html>
